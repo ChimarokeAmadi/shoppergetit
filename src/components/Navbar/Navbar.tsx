@@ -50,13 +50,6 @@ export default function Navbar() {
 
 			{/* Mobile Navigation */}
 			<div className='flex items-center gap-[14px] justify-end lg:hidden'>
-				<a
-					href='#'
-					className="relative text-black font-bold text-lg pb-2
-                 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] 
-                 after:bg-gradient-to-br after:from-[#C67250] after:to-[#9B5B9A]">
-					Gradient Border Link
-				</a>
 				<Image
 					width={34.17}
 					height={34.17}
