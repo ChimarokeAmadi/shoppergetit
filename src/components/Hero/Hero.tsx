@@ -23,7 +23,7 @@ export default function Hero() {
 									key='slide1'
 									initial={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
 									animate={{ x: 0, opacity: 1 }}
-									exit={{ x: direction > 0 ? -300 : 300, opacity: 0 }}
+									exit={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
 									transition={{ duration: 0.2 }}
 									className='absolute bg-white rounded-[25px] top-[184px] left-[62px] bottom-[-90px] px-[13px] pt-[19px]'>
 									<div className='px-7 pt-10 pb-[21px]'>
@@ -63,7 +63,7 @@ export default function Hero() {
 									key='slide2'
 									initial={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
 									animate={{ x: 0, opacity: 1 }}
-									exit={{ x: direction > 0 ? -300 : 300, opacity: 0 }}
+									exit={{ x: direction > 0 ? 300 : 300, opacity: 0 }}
 									transition={{ duration: 0.2 }}
 									className='absolute top-[184px] left-[62px] bottom-[-90px] bg-white pt-[19px] pb-[6px] px-[13px] rounded-[25px]'>
 									<div className=' pb-[20px] pl-7 pr-[64px] '>
@@ -125,7 +125,7 @@ export default function Hero() {
 								key='slide1'
 								initial={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
 								animate={{ x: 0, opacity: 1 }}
-								exit={{ x: direction > 0 ? -300 : 300, opacity: 0 }}
+								exit={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
 								transition={{ duration: 0.2 }}
 								className=''>
 								<div className='flex justify-center w-full'>
@@ -157,7 +157,7 @@ export default function Hero() {
 								key='slide2'
 								initial={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
 								animate={{ x: 0, opacity: 1 }}
-								exit={{ x: direction > 0 ? -300 : 300, opacity: 0 }}
+								exit={{ x: direction > 0 ? 300 : 300, opacity: 0 }}
 								transition={{ duration: 0.2 }}
 								className=''>
 								<form
