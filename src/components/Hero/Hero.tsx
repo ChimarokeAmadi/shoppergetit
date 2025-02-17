@@ -18,7 +18,7 @@ export default function Hero() {
 				{/* desktop Hero section */}
 				<div className='w-full'>
 					<div className='mt-[26px] hidden lg:inline-block bg-[url(/HeroBg.png)] bg-cover bg-center w-full h-[471px] rounded-[43px] relative'>
-						<div className='absolute bg-white rounded-[25px] top-[184px] left-[62px] bottom-[-90px] overflow-hidden'>
+						<div className='absolute bg-white rounded-[25px] top-[184px] left-[62px] min-h-[410px] overflow-hidden'>
 							<AnimatePresence mode='popLayout' custom={direction}>
 								{index === 0 && (
 									<motion.div
@@ -122,7 +122,7 @@ export default function Hero() {
 				<div className='lg:hidden pt-[52px]'>
 					<p className='text-[24px] mb-[46px]'>Welcome back</p>
 					<div className=' relative w-full h-[400px] overflow-hidden '>
-						<AnimatePresence mode='wait' custom={direction}>
+						<AnimatePresence mode='popLayout' custom={direction}>
 							{index === 0 && (
 								<motion.div
 									key='slide1'
@@ -168,10 +168,10 @@ export default function Hero() {
 							{index === 1 && (
 								<motion.div
 									key='slide2'
-									initial={{ y: direction > 0 ? 300 : -300, opacity: 1 }}
+									initial={{ y: direction > 0 ? 300 : -500, opacity: 1 }}
 									animate={{ y: 0, opacity: 1 }}
-									exit={{ y: direction > 0 ? 300 : 300, opacity: 0 }}
-									transition={{ duration: 0.5, ease: "easeInOut" }}
+									exit={{ y: direction > 0 ? 600 : -300, opacity: 0 }}
+									transition={{ duration: 0.8, ease: "easeInOut" }}
 									className='absolute w-full top-0 left-0'>
 									<form
 										action='/submit'
