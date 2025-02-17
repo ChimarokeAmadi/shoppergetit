@@ -123,9 +123,9 @@ export default function Hero() {
 						{index === 0 && (
 							<motion.div
 								key='slide1'
-								initial={{ x: direction > 0 ? -300 : 300, opacity: 0 }}
+								initial={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
 								animate={{ x: 0, opacity: 1 }}
-								exit={{ x: direction > 0 ? -300 : 300, opacity: 0 }}
+								exit={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
 								transition={{ duration: 0.2 }}
 								className=''>
 								<div className='flex justify-center w-full'>
@@ -190,7 +190,7 @@ export default function Hero() {
 										Proceed
 									</button>
 									<button
-										onClick={() => swipe(1)}
+										onClick={() => swipe(-1)}
 										className='flex items-center gap-[6px] mb-5 text-[#5D5D5D]'>
 										<Image alt='' height={20} width={20} src={"/switch.png"} />{" "}
 										Click to switch to manual
