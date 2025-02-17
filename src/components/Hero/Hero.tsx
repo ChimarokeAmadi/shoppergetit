@@ -98,7 +98,7 @@ export default function Hero() {
 												Proceed
 											</button>
 											<button
-												onClick={() => swipe(1)}
+												onClick={() => swipe(-1)}
 												className='flex items-center gap-[6px] mb-5 text-[#5D5D5D]'>
 												<Image
 													alt=''
