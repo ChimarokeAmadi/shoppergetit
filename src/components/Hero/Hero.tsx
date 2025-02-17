@@ -123,9 +123,9 @@ export default function Hero() {
 						{index === 0 && (
 							<motion.div
 								key='slide1'
-								initial={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
+								initial={{ x: direction > 0 ? -300 : 300, opacity: 0 }}
 								animate={{ x: 0, opacity: 1 }}
-								exit={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
+								exit={{ x: direction > 0 ? -300 : 300, opacity: 0 }}
 								transition={{ duration: 0.2 }}
 								className=''>
 								<div className='flex justify-center w-full'>
